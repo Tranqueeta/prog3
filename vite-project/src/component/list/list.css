@@ -1,0 +1,10 @@
+.conTarj{
+display: flex;
+
+
+}
+.tarjhijo{
+    display: block;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

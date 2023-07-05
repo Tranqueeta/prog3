@@ -1,0 +1,18 @@
+{
+    "productos": [
+      { "id": 1, "nombreProd": "Nike Air Force 1 Mid '07", "descripcion": "El Nike Air Force 1 Mid '07 es lo que mejor conoces: confección de los años 80, cuero liso y nada más que estilo.", "imagen":"https://nikearprod.vtexassets.com/arquivos/ids/531799-1200-1200?v=638161384309000000&width=1200&height=1200&aspect=true" ,"alt": "zapasN","talle":"42","precio":"$45000" },
+      { "id": 2, "nombreProd": "Nike", "descripcion": "", "imagen":"" ,"alt": "","talle":"","precio":"" },
+      { "id": 3, "nombreProd": "Nike", "descripcion": "", "imagen":"" ,"alt": "","talle":"","precio":"" },
+      { "id": 4, "nombreProd": "Nike", "descripcion": "", "imagen":"" ,"alt": "","talle":"","precio":"" },
+      { "id": 5, "nombreProd": "Nike", "descripcion": "", "imagen":"" ,"alt": "","talle":"","precio":"" },
+      { "id": 6, "nombreProd": "Nike", "descripcion": "", "imagen":"" ,"alt": "","talle":"","precio":"" },
+      { "id": 7, "nombreProd": "Nike", "descripcion": "", "imagen":"" ,"alt": "","talle":"","precio":"" },
+      { "id": 8, "nombreProd": "Nike", "descripcion": "", "imagen":"" ,"alt": "","talle":"","precio":"" }
+    ],
+
+    "Ventas": [
+        { "id": 1, "nombreProd": "Nike", "descripcion": "", "imagen":"" ,"alt": "","talle":"","precio":"" }
+      ]
+
+
+  }
