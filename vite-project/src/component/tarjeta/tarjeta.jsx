@@ -1,23 +1,32 @@
-import { Card } from 'antd';
-import { Button, Space } from 'antd';
+import React from 'react';
+import { Card, Button } from 'antd';
+
 const { Meta } = Card;
+
 const Cartita = (props) => (
   <Card
     hoverable
     style={{
-      width: '200px',
-      
+      width: '350px',
     }}
     cover={<img alt={props.alt} src={props.imagen} />}
   >
-    <Meta talle={props.talle} precio={props.precio} title={props.nombreProd} description={props.descripcion} />
+    <Meta
+      title={props.nombreProd}
+      description={
+        <div>
+          <p>{props.descripcion}</p>
+          <p>talle={props.talle} precio={props.precio}</p>
+        </div>
+      }
+    />
 
-    <Button danger>editar</Button>
+    <Button danger onClick={()=>{}}>editar</Button>
 
-    <Button type="primary" danger>
+    <Button type="primary" danger onClick={()=>{}}>
       borrar
     </Button>
-
   </Card>
 );
+
 export default Cartita;

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Cartita from '../tarjeta/tarjeta';
+import { json } from 'react-router-dom';
 //import { useLocation } from 'react-router-dom';
 
 const Listado = () => {
@@ -27,7 +28,7 @@ const Listado = () => {
       {Productos.map((producto) => (console.log(producto),
         <div className="tarjhijo" key={producto.id}>
           <Cartita
-            nombreProd={producto.marca}
+            nombreProd={JSON.stringify(producto.marca)}
             descripcion={producto.desc}
             imagen={producto.img}
             alt={producto.alt}
