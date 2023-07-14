@@ -3,11 +3,12 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 import {
-  PieChartOutlined,
+  HomeTwoTone,
+  DollarOutlined,
   DesktopOutlined,
   UserOutlined,
-  TeamOutlined,
-  FileOutlined,
+  AppstoreTwoTone,
+  DingtalkOutlined,
 } from '@ant-design/icons';
 
 const {  Sider } = Layout;
@@ -23,16 +24,11 @@ function getItem(label, key, icon, children) {
 }
 
 const items = [
- getItem('Productos', '/productoss', <DesktopOutlined />),
-  getItem('ventas', '/ventas', <DesktopOutlined />),
-  getItem('User', 'sub1', <UserOutlined />, [
-    getItem('Tom', '3'),
-    getItem('Bill', '4'),
-    getItem('Alex', '5'),
-  ]),
-  getItem('Team', 'sub2', <TeamOutlined />, [getItem('Team 1', '6'), getItem('Team 2', '8')]),
-  getItem('Files', '9', <FileOutlined />),
-];
+  getItem('Home','/home', <HomeTwoTone />),
+  getItem('Productos','/productoss', <AppstoreTwoTone />),
+  getItem('ventas', '/ventas', <DollarOutlined/>),
+  getItem('Registrar', '/registro', <DingtalkOutlined />),
+]
 
 const Leftmenu = () => {
   const [collapsed, setCollapsed] = useState(false);

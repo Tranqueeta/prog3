@@ -5,8 +5,9 @@ import { json } from 'react-router-dom';
 //import { useLocation } from 'react-router-dom';
 
 const Listado = () => {
-  ///const location = useLocation();
   const URL = 'http://localhost:3000/productos' //location.pathname; // Corrección: location.pathname contiene la URL actual
+
+
 
   const [Productos, setProductos] = useState([]);
 
@@ -28,12 +29,14 @@ const Listado = () => {
       {Productos.map((producto) => (console.log(producto),
         <div className="tarjhijo" key={producto.id}>
           <Cartita
-            nombreProd={JSON.stringify(producto.marca)}
+            nombreProd={producto.marca}
             descripcion={producto.desc}
             imagen={producto.img}
             alt={producto.alt}
             talle={producto.talle}
             precio={producto.precio}
+            id={producto.id}
+            url={URL}
           />
         </div>
       ))}
